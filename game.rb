@@ -3,11 +3,11 @@ class Game
   attr_reader :winning_condition
 
   def initialize
-    @top = ["~ ", "|", " ~ ", "|", " ~"]
+    @top = ["  ", "|", "   ", "|", "  "]
     @up_line = ["_________"]
-    @middle = ["~ ", "|", " ~ ", "|", " ~"]
+    @middle = ["  ", "|", "   ", "|", "  "]
     @down_line = ["_________"]
-    @bottom = ["~ ", "|", " ~ ", "|", " ~"]
+    @bottom = ["  ", "|", "   ", "|", "  "]
     @winning_condition = Winning_condition.new 
     @old_moves = []
   end
@@ -94,7 +94,7 @@ class Game
   end
 
   def check_winner 
-    if @winning_condition.player_turn_tracker % 2 == 0
+    if @winning_condition.player_turn_tracker % 2 == 1
       return "Player 1"
     else return "Player 2"
     end

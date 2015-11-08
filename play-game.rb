@@ -36,4 +36,4 @@ while game.winning_condition.winner != true
 
 end
 
-puts "Way to play!"
+puts "Way to play #{game.check_winner}!"

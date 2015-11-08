@@ -93,4 +93,11 @@ class Game
     end
   end
 
+  def check_winner 
+    if @winning_condition.player_turn_tracker % 2 == 0
+      return "Player 1"
+    else return "Player 2"
+    end
+  end
+
 end

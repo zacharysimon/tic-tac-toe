@@ -1,7 +1,7 @@
 require_relative "game.rb"
 
 class Winning_condition # creates class with methods to check for a winner 
-  attr_reader :winner
+  attr_reader :winner, :player_turn_tracker
 
   def initialize
     @winner = false 
